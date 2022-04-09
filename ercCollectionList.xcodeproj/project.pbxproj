@@ -16,6 +16,14 @@
 		593BBF2E2800810700153D87 /* ercCollectionListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593BBF2D2800810700153D87 /* ercCollectionListTests.swift */; };
 		593BBF382800810700153D87 /* ercCollectionListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593BBF372800810700153D87 /* ercCollectionListUITests.swift */; };
 		593BBF3A2800810700153D87 /* ercCollectionListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593BBF392800810700153D87 /* ercCollectionListUITestsLaunchTests.swift */; };
+		593BBF472800818800153D87 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593BBF462800818700153D87 /* APIService.swift */; };
+		593BBF49280084A600153D87 /* AssetsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593BBF48280084A600153D87 /* AssetsList.swift */; };
+		593BBF4B2800905B00153D87 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593BBF4A2800905B00153D87 /* Asset.swift */; };
+		593BBF4F280091F600153D87 /* AssetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593BBF4E280091F600153D87 /* AssetCollectionViewCell.swift */; };
+		593BBF5128009C7600153D87 /* AssetCollectionListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593BBF5028009C7600153D87 /* AssetCollectionListVM.swift */; };
+		593BBF532800A55800153D87 /* AssetDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593BBF522800A55800153D87 /* AssetDetailVC.swift */; };
+		593BBF552801249300153D87 /* AssetDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593BBF542801249300153D87 /* AssetDetailVM.swift */; };
+		593BBF5728014B8B00153D87 /* AssetPermaWebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593BBF5628014B8B00153D87 /* AssetPermaWebVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		593BBF332800810700153D87 /* ercCollectionListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ercCollectionListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		593BBF372800810700153D87 /* ercCollectionListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ercCollectionListUITests.swift; sourceTree = "<group>"; };
 		593BBF392800810700153D87 /* ercCollectionListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ercCollectionListUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		593BBF462800818700153D87 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		593BBF48280084A600153D87 /* AssetsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsList.swift; sourceTree = "<group>"; };
+		593BBF4A2800905B00153D87 /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		593BBF4E280091F600153D87 /* AssetCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetCollectionViewCell.swift; sourceTree = "<group>"; };
+		593BBF5028009C7600153D87 /* AssetCollectionListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetCollectionListVM.swift; sourceTree = "<group>"; };
+		593BBF522800A55800153D87 /* AssetDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetDetailVC.swift; sourceTree = "<group>"; };
+		593BBF542801249300153D87 /* AssetDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetDetailVM.swift; sourceTree = "<group>"; };
+		593BBF5628014B8B00153D87 /* AssetPermaWebVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetPermaWebVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +115,17 @@
 		593BBF152800810600153D87 /* ercCollectionList */ = {
 			isa = PBXGroup;
 			children = (
+				593BBF462800818700153D87 /* APIService.swift */,
 				593BBF162800810600153D87 /* AppDelegate.swift */,
 				593BBF182800810600153D87 /* SceneDelegate.swift */,
-				593BBF1A2800810600153D87 /* ViewController.swift */,
 				593BBF1C2800810600153D87 /* Main.storyboard */,
 				593BBF1F2800810700153D87 /* Assets.xcassets */,
 				593BBF212800810700153D87 /* LaunchScreen.storyboard */,
 				593BBF242800810700153D87 /* Info.plist */,
+				593BBF5828017A4100153D87 /* Models */,
+				593BBF5928017A6000153D87 /* AssetsListPage */,
+				593BBF5A28017A7200153D87 /* AssetDetailPage */,
+				593BBF5628014B8B00153D87 /* AssetPermaWebVC.swift */,
 			);
 			path = ercCollectionList;
 			sourceTree = "<group>";
@@ -125,6 +145,34 @@
 				593BBF392800810700153D87 /* ercCollectionListUITestsLaunchTests.swift */,
 			);
 			path = ercCollectionListUITests;
+			sourceTree = "<group>";
+		};
+		593BBF5828017A4100153D87 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				593BBF48280084A600153D87 /* AssetsList.swift */,
+				593BBF4A2800905B00153D87 /* Asset.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		593BBF5928017A6000153D87 /* AssetsListPage */ = {
+			isa = PBXGroup;
+			children = (
+				593BBF4E280091F600153D87 /* AssetCollectionViewCell.swift */,
+				593BBF1A2800810600153D87 /* ViewController.swift */,
+				593BBF5028009C7600153D87 /* AssetCollectionListVM.swift */,
+			);
+			path = AssetsListPage;
+			sourceTree = "<group>";
+		};
+		593BBF5A28017A7200153D87 /* AssetDetailPage */ = {
+			isa = PBXGroup;
+			children = (
+				593BBF522800A55800153D87 /* AssetDetailVC.swift */,
+				593BBF542801249300153D87 /* AssetDetailVM.swift */,
+			);
+			path = AssetDetailPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +306,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				593BBF4B2800905B00153D87 /* Asset.swift in Sources */,
+				593BBF5728014B8B00153D87 /* AssetPermaWebVC.swift in Sources */,
+				593BBF5128009C7600153D87 /* AssetCollectionListVM.swift in Sources */,
+				593BBF552801249300153D87 /* AssetDetailVM.swift in Sources */,
+				593BBF532800A55800153D87 /* AssetDetailVC.swift in Sources */,
 				593BBF1B2800810600153D87 /* ViewController.swift in Sources */,
 				593BBF172800810600153D87 /* AppDelegate.swift in Sources */,
+				593BBF49280084A600153D87 /* AssetsList.swift in Sources */,
+				593BBF4F280091F600153D87 /* AssetCollectionViewCell.swift in Sources */,
+				593BBF472800818800153D87 /* APIService.swift in Sources */,
 				593BBF192800810600153D87 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,7 +423,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -422,7 +478,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -439,6 +495,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L9387PEN7X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ercCollectionList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -466,6 +523,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L9387PEN7X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ercCollectionList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
