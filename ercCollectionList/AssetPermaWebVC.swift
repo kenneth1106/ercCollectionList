@@ -25,7 +25,7 @@ class AssetPermaWebVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationItem.title = "PermaDetail"
         setuplayout()
     }
     

@@ -113,7 +113,7 @@ class AssetDetailVC: UIViewController {
     @objc func openWebLink() {
         if let permalink = self.assetDetailVM.selectedAssetItem?.permalink, let permalinkUrl = URL(string: permalink) {
             permalinkWebView = AssetPermaWebVC(permaUrl: permalinkUrl)
-            self.present(permalinkWebView!, animated: true, completion: nil)
+            self.navigationController?.pushViewController(permalinkWebView!, animated: true)
         }
     }
 }
